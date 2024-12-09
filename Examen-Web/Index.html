@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epic Store</title>
+    
+    <link rel="stylesheet" href="./CSS/Index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <header >
+        <div class="menu container">
+            <a href="#" class="logo">Epic Store</a>
+            <nav class="navbar">
+                <ul>
+                    <li>
+                        <a href="#">Juegos</a>
+                        <div class="dropdown">
+                            <a href="#Accion" class="drop">Accion</a>
+                            <a href="#Aventura" class="drop">Aventura</a>
+                            <a href="#Rpg" class="drop">RPG</a>
+                            <a href="#Deportes" class="drop">Deportes</a>
+                        </div>
+                    </li>
+                    <li><a href="#">Carrito <i class="bi bi-cart"></i></a></li>
+                    <li><a href="./Iniciar_Sesión.html">Iniciar sesión</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="cuerpobody">
+        <div class="cuerpo">
+            <div class="datos">
+                <h1>Compra tu juego favorito aquí</h1>
+                <p class="info">Descubre nuestra increíble selección de juegos y ofertas exclusivas.</p>
+            </div>
+            <div class="Bd">
+                <div class="card">
+                    <div class="face front">
+                        <img src="./SRC/img/img1.jfif" alt="">
+                        <h3>JUSTCAUSE2</h3>
+                    </div>
+                    <div class="face back">
+                        <h3>JUSTCAUSE2</h3>
+                        <p> Es un videojuego de acción y aventura con uno de los mapas de videojuegos más grandes de la historia.</p>
+                        <div class="link">
+                            <a href="#">Detalles</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="face front">
+                        <img src="./SRC/img/img2.jfif" alt="">
+                        <h3>FC24</h3>
+                    </div>
+                    <div class="face back">
+                        <h3>FC24</h3>
+                        <p>Es un videojuego de fútbol, desarrollado por EA, y publicado por EA Sports.</p>
+                        <div class="link">
+                            <a href="#">Detalles</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="face front">
+                        <img src="./SRC/img/img3.jfif" alt="">
+                        <h3>CALL FO DUTY</h3>
+                    </div>
+                    <div class="face back">
+                        <h3>CALL FO DUTY</h3>
+                        <p> Es un videojuego de disparos en primera persona desarrollado por Infinity Ward y publicado por Activision.</p>
+                        <div class="link">
+                            <a href="#">Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="face front">
+                        <img src="./SRC/img/img4.jfif" alt="">
+                        <h3>ROCKET LEAGUE</h3>
+                    </div>
+                    <div class="face back">
+                        <h3>ROCKET LEAGUE</h3>
+                        <p> Descrito como fútbol, ​​"pero con autos propulsados ​​por cohetes".</p>
+                        <div class="link">
+                            <a href="#">Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="face front">
+                        <img src="./SRC/img/img5.jfif" alt="">
+                        <h3>FORNITE</h3>
+                    </div>
+                    <div class="face back">
+                        <h3>FORNITE</h3>
+                        <p> Es un videojuego del año 2017 desarrollado por la empresa Epic Games.</p>
+                        <div class="link">
+                            <a href="#">Detalles</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="itemCarrusel">
+        <div></div>
+        <div></div>
+    </div>
+    <section class="accion">
+        <h2 id="Accion">Acción</h2>
+        <div class="carrusel">
+            <div class="imagenes">
+                <img src="./SRC/img/img1.jfif" alt="Imagen 1">
+                <img src="./SRC/img/img2.jfif" alt="Imagen 2">
+                <img src="./SRC/img/img6.jfif" alt="Imagen 3">
+                <img src="./SRC/img/img1.jfif" alt="Imagen 1">
+                <img src="./SRC/img/img2.jfif" alt="Imagen 2">
+                <img src="./SRC/img/img6.jfif" alt="Imagen 3">
+            </div>
+            <button class="prev" onclick="cambiarImagen(-1)">&#10094;</button>
+            <button class="next" onclick="cambiarImagen(1)">&#10095;</button>
+        </div>
+        <script src="./JS/Index.js"></script>
+</section>
+    <div class="flip"></div>
+
+    <section class="aventura" id="Aventura">
+        <h2  >Aventura</h2>
+        <div class="carrusel">
+            <div class="imagenes">
+                <img src="./SRC/img/img1.jfif" alt="Imagen 1">
+                <img src="./SRC/img/img2.jfif" alt="Imagen 2">
+                <img src="./SRC/img/img6.jfif" alt="Imagen 3">
+                <img src="./SRC/img/img1.jfif" alt="Imagen 1">
+                <img src="./SRC/img/img2.jfif" alt="Imagen 2">
+                <img src="./SRC/img/img6.jfif" alt="Imagen 3">
+            </div>
+            <button class="prev" onclick="cambiarImagen(-1)">&#10094;</button>
+            <button class="next" onclick="cambiarImagen(1)">&#10095;</button>
+        </div>
+        <script src="./JS/Index.js"></script>
+    </section>
+
+    <div class="flip"></div>
+
+    <div class="rpg" >
+        <h2 id="Rpg" >RPG</h2>
+        <div class="carrusel">
+            <div class="imagenes">
+                <img src="./SRC/img/img1.jfif" alt="Imagen 1">
+                <img src="./SRC/img/img2.jfif" alt="Imagen 2">
+                <img src="./SRC/img/img6.jfif" alt="Imagen 3">
+                <img src="./SRC/img/img1.jfif" alt="Imagen 1">
+                <img src="./SRC/img/img2.jfif" alt="Imagen 2">
+                <img src="./SRC/img/img6.jfif" alt="Imagen 3">
+            </div>
+            <button class="prev" onclick="cambiarImagen(-1)">&#10094;</button>
+            <button class="next" onclick="cambiarImagen(1)">&#10095;</button>
+        </div>
+        <script src="./JS/Index.js"></script>
+    </div>
+
+    <div class="flip"></div>
+
+    <div class="deportes" >
+        <h2 id="Deportes" >Deportes</h2>
+        <div class="carrusel">
+            <div class="imagenes">
+                <img src="./SRC/img/img1.jfif" alt="Imagen 1">
+                <img src="./SRC/img/img2.jfif" alt="Imagen 2">
+                <img src="./SRC/img/img6.jfif" alt="Imagen 3">
+                <img src="./SRC/img/img1.jfif" alt="Imagen 1">
+                <img src="./SRC/img/img2.jfif" alt="Imagen 2">
+                <img src="./SRC/img/img6.jfif" alt="Imagen 3">
+            </div>
+            <button class="prev" onclick="cambiarImagen(-1)">&#10094;</button>
+            <button class="next" onclick="cambiarImagen(1)">&#10095;</button>
+        </div>
+        <script src="./JS/Index.js"></script>
+    </div>
+</body>
+<footer>
+    <div class="footer-content">
+        <div class="footer-links">
+            <h3>Enlaces Rápidos</h3>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Juegos</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Soporte</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <h3>Síguenos</h3>
+            <a href="https://wa.me/qr/AO3V5B3725BRE1"><i class="bi bi-whatsapp"></i></a>
+            <a href=""><i class="bi bi-messenger"></i></a>
+            <a href="https://www.facebook.com/share/19bNBGHagC/"><i class="bi bi-facebook"></i></a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2023 Epic Store. Todos los derechos reservados.</p>
+        <p><a href="#">Política de Privacidad</a> | <a href="#">Términos de Servicio</a></p>
+    </div>
+</footer>
+</html>

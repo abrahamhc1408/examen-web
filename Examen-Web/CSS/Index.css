@@ -1,0 +1,362 @@
+*
+{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+.Bd{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+header {
+    width: 100%;
+    background-color: rgb(4, 11, 63); /* Color de fondo */
+    padding: 10px 0; /* Espaciado superior e inferior */
+    position: fixed; /* Fijo en la parte superior */
+    top: 0; /* Asegura que esté en la parte superior */
+    left: 0; /* Alineado a la izquierda */
+    z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+}
+.cuerpobody{
+    background-color: #2D73DB;
+    box-shadow: 0 10px 15px #fb7217;
+}
+.datos{
+    justify-content: center;
+    text-align: center;
+    color:rgb(4, 11, 63);
+}
+/* Contenedor principal del menú */
+.menu.container {
+    display: flex; /* Usamos Flexbox para alinear los elementos */
+    justify-content: space-between; /* Separar el logo y el menú */
+    align-items: center; /* Alineación vertical centrada */
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrado horizontal */
+    padding: 0 20px; /* Espaciado a los lados */
+}
+
+/* Estilo del logo */
+a.logo {
+    font-size: 1.8em;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Menú de navegación */
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Elementos del menú */
+.navbar ul li {
+    margin-left: 30px; /* Separación entre elementos del menú */
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+/* Efecto hover sobre los enlaces del menú */
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Asegura que el contenido no quede detrás del header fijo */
+.cuerpobody {
+    padding-top: 70px; /* Espacio adicional para evitar que el contenido quede tapado por el header */
+}
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .menu.container {
+        flex-direction: column; /* Apilar los elementos de manera vertical */
+        align-items: center; /* Centrado de todos los elementos */
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Los elementos del menú se apilan verticalmente */
+        margin-top: 10px;
+    }
+
+    .navbar ul li {
+        margin: 5px 0; /* Reducción del margen entre los elementos del menú */
+    }
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+nav .navbar ul li {
+    position: relative;  /* Necesario para que el dropdown se posicione relativo a este li */
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: rgb(4, 11, 63);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.navbar li:hover .dropdown {
+    display: block;
+}
+
+.dropdown  a {
+    display: block; /* Hace que los enlaces estén uno debajo del otro */
+    padding: 10px;
+    color: white; /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado */
+    border-bottom: 1px solid #444; /* Límite entre los elementos */
+}
+
+.card {
+    position: relative;
+    width: 189px;
+    height: 250px;
+    margin: 20px;
+}
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+.card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #fb7217;
+}
+.card .frot img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0, 0, 0, .4);
+    text-align: center;
+}
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(51, 51, 51);
+    padding: 15px;
+    color:  #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0  5 10px #fb7217;
+}
+.card .link{
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+.card .back .link a{
+    color: #f3f3f3;
+}
+.card .back h3
+{
+    font-size: 15px;
+    margin-top: 5px;
+    letter-spacing: 2px;
+}
+.card .back p{
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+.accion h2{
+    justify-content: center;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.flip{
+    margin-top: 15px;
+    height: 5px;
+    background-color: #2D73DB;
+}
+.aventura h2{
+    justify-content: center;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 20px; 
+}
+
+.rpg h2{
+    justify-content: center;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 20px; 
+}
+
+.aventura h2{
+    justify-content: center;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 20px; 
+}
+
+.deportes h2{
+    justify-content: center;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 20px; 
+}
+
+.carrusel {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.imagenes {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.imagenes img {
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    color: #f3f3f3;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fb7217;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+footer {
+    margin-top: 50px;
+    background-color: #1c1c1e;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links, .footer-social {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-links h3, .footer-social h3 {
+    border-bottom: 2px solid #4a4a4a;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.footer-links ul {   
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.footer-links li {
+    margin: 10px 0;
+}
+
+.footer-links a, .footer-social a {
+    
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.footer-social a{
+    margin-top: 20px;
+    justify-content: space-between; 
+}
+
+.footer-social a
+{
+    border: 1px solid #ccc;
+    border-radius: 20%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    width: 40px;
+    height: 40px;
+}
+.footer-links a:hover, .footer-social a:hover {
+    color: #ffcc00; /* Color de hover */
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #4a4a4a;
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+}
+
+.footer-bottom a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-bottom a:hover {
+    color: #ffcc00; /* Color de hover */
+}
